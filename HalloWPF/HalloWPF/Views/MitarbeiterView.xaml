@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="HalloWPF.Views.MitarbeiterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HalloWPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top">
+            <Button Click="Button_Click">Klick mich</Button>
+        </WrapPanel>
+        <DataGrid DockPanel.Dock="Left" Width="250"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+            </Grid.RowDefinitions>
+            <Label Name="lbl1" Content="Name"/>
+            <TextBox Grid.Column="1"/>
+            <Label Content="Name" Grid.Row="1"/>
+            <DatePicker Grid.Column="1" Grid.Row="1"/>
+            
+        </Grid>
+    </DockPanel>
+</UserControl>
