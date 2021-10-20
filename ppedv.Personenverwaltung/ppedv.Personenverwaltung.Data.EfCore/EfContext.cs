@@ -24,9 +24,8 @@ namespace ppedv.Personenverwaltung.Data.EfCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //TpT
-            modelBuilder.Entity<Mitarbeiter>().ToTable("Mitarbeiter");
-            //modelBuilder.Entity<Kunde>().ToTable("Customer");
-            modelBuilder.Entity<Kunde>().ToTable("Kunde");
+            modelBuilder.Entity<Mitarbeiter>().ToTable("Employees");
+            modelBuilder.Entity<Kunde>().ToTable("Customers");
             modelBuilder.Entity<Person>().ToTable("Person");
 
             modelBuilder.Entity<Mitarbeiter>().Property(x => x.Beruf).HasMaxLength(48).IsRequired();
