@@ -1,6 +1,7 @@
 # Csharp_dotnet_Overview
 
 Links:
+
 Tag 1:
 
 https://referencesource.microsoft.com/
@@ -22,6 +23,7 @@ https://grpc.io/docs/languages/csharp/quickstart/
 https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor
 
 Tag2: 
+
 https://github.com/ComponentFactory/Krypton
 
 https://benruehl.github.io/adonis-ui/
@@ -33,3 +35,17 @@ https://www.connectionstrings.com/
 https://linqsamples.com/
 
 https://github.com/OleksiiKovalov/expressprofiler/issues/2
+
+Tag3:
+
+https://de.wikipedia.org/wiki/ISO/IEC_9126
+
+https://autofixture.github.io/docs/quick-start/#
+
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=vs
+
+https://fluentassertions.com/objectgraphs/
+
+https://docs.microsoft.com/en-us/ef/core/modeling/concurrency?tabs=data-annotations
+
+https://techcommunity.microsoft.com/t5/windows-dev-appconsult/ui-testing-for-windows-apps-with-winappdriver-and-appium/ba-p/825352
