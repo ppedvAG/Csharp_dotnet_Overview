@@ -1,3 +1,4 @@
+using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -43,6 +44,31 @@ namespace Calculator.Tests
 
             Assert.ThrowsException<OverflowException>(() => calc.Sum(int.MaxValue, 1));
 
+        }
+
+        [TestMethod]
+        public void Calc_IsWeekend()
+        {
+            Calc calc = new Calc();
+
+            using (ShimsContext.Create())
+            {
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 18);
+                Assert.IsFalse(calc.IsWeekend());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 19);
+                Assert.IsFalse(calc.IsWeekend());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 20);
+                Assert.IsFalse(calc.IsWeekend());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 21);
+                Assert.IsFalse(calc.IsWeekend());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 22);
+                Assert.IsFalse(calc.IsWeekend());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 23);
+                Assert.IsTrue(calc.IsWeekend());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2021, 10, 24);
+                Assert.IsTrue(calc.IsWeekend());
+
+            }
         }
 
     }
