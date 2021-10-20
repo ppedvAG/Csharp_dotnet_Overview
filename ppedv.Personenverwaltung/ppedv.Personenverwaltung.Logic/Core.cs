@@ -13,9 +13,6 @@ namespace ppedv.Personenverwaltung.Logic
             Repository = repository;
         }
 
-        public Core() : this(new Data.EfCore.EfRepository())
-        { }
-
         public IEnumerable<Mitarbeiter> GetMitarbeiterThatHaveBirthOfMonth(int month)
         {
             return Repository.Query<Mitarbeiter>().Where(x => x.GebDatum.Month == month);
