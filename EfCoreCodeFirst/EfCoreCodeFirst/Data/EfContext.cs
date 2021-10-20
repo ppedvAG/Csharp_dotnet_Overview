@@ -30,6 +30,7 @@ namespace EfCoreCodeFirst.Data
         {
             //TpT
             modelBuilder.Entity<Mitarbeiter>().ToTable("Mitarbeiter");
+            //modelBuilder.Entity<Kunde>().ToTable("Customer");
             modelBuilder.Entity<Kunde>().ToTable("Kunde");
             modelBuilder.Entity<Person>().ToTable("Person");
 
