@@ -21,3 +21,15 @@ https://grpc.io/docs/languages/csharp/quickstart/
 
 https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor
 
+Tag2: 
+https://github.com/ComponentFactory/Krypton
+
+https://benruehl.github.io/adonis-ui/
+
+https://prismlibrary.com/docs/
+
+https://www.connectionstrings.com/
+
+https://linqsamples.com/
+
+https://github.com/OleksiiKovalov/expressprofiler/issues/2
