@@ -28,6 +28,8 @@ namespace ppedv.Personenverwaltung.Data.EfCore
             modelBuilder.Entity<Kunde>().ToTable("Customers");
             modelBuilder.Entity<Person>().ToTable("Person");
 
+            //modelBuilder.Entity<Mitarbeiter>().Property(x => x.Name).IsConcurrencyToken();
+
             modelBuilder.Entity<Mitarbeiter>().Property(x => x.Beruf).HasMaxLength(48).IsRequired();
         }
 
